@@ -1,0 +1,3012 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bharat Leadership Summit 2026 | BLS 2026</title>
+
+<meta name="description" content="Bharat Leadership Summit 2026 - India's platform for business leaders, entrepreneurs, investors, speakers, media and networking.">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root{
+    --navy:#061522;
+    --navy2:#0b2439;
+    --navy3:#102f48;
+    --gold:#d7ad5b;
+    --gold-light:#f1d798;
+    --white:#ffffff;
+    --cream:#f5f2eb;
+    --text:#18212b;
+    --muted:#66717d;
+    --border:#e3e5e8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:90px;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:var(--text);
+    background:#fff;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button{
+    font-family:inherit;
+}
+
+.container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* =========================================================
+   ANNOUNCEMENT BAR
+========================================================= */
+
+.announcement-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:34px;
+    z-index:1001;
+    background:var(--gold);
+    color:#111;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:.8px;
+    padding:0 40px;
+}
+
+.announcement-bar span{
+    display:block;
+}
+
+.announcement-bar a{
+    text-decoration:underline;
+    margin-left:7px;
+}
+
+.announcement-close{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    background:none;
+    border:0;
+    cursor:pointer;
+    font-size:18px;
+    line-height:1;
+    color:#111;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+    position:fixed;
+    top:34px;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(6,21,34,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.navbar{
+    height:76px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-weight:bold;
+    letter-spacing:1px;
+    flex-shrink:0;
+}
+
+.logo-icon{
+    width:42px;
+    height:42px;
+    border:1px solid var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:Georgia,serif;
+    font-size:25px;
+    color:var(--gold-light);
+}
+
+.logo-text span{
+    display:block;
+    font-size:12px;
+    line-height:1.25;
+}
+
+.logo-text strong{
+    color:var(--gold);
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    font-size:12px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+nav a:hover{
+    color:var(--gold-light);
+}
+
+.nav-contact{
+    background:var(--gold);
+    color:#111!important;
+    padding:11px 17px;
+}
+
+.mobile-btn{
+    display:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+    border:0;
+    background:none;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:900px;
+    position:relative;
+    background:
+        linear-gradient(90deg,
+        rgba(2,12,21,.98) 0%,
+        rgba(2,12,21,.91) 38%,
+        rgba(2,12,21,.55) 75%,
+        rgba(2,12,21,.8) 100%),
+        radial-gradient(circle at 80% 40%,#234a68,#061522 60%);
+    color:white;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    padding-top:110px;
+}
+
+.hero:after{
+    content:"BLS 2026";
+    position:absolute;
+    right:-30px;
+    bottom:30px;
+    font-family:Georgia,serif;
+    font-size:170px;
+    font-weight:bold;
+    color:white;
+    opacity:.025;
+    pointer-events:none;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:850px;
+}
+
+.tag{
+    color:var(--gold-light);
+    letter-spacing:4px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.hero h1{
+    font-family:Georgia,serif;
+    font-size:clamp(55px,8vw,100px);
+    line-height:.98;
+    margin:20px 0;
+}
+
+.hero h1 span{
+    color:var(--gold);
+}
+
+.hero p{
+    max-width:700px;
+    color:#bdc9d4;
+    font-size:18px;
+}
+
+/* =========================================================
+   COUNTDOWN
+========================================================= */
+
+.countdown-wrap{
+    margin-top:35px;
+    max-width:650px;
+}
+
+.countdown-label{
+    color:var(--gold-light);
+    font-size:11px;
+    letter-spacing:3px;
+    font-weight:bold;
+    margin-bottom:12px;
+}
+
+.countdown{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.count-box{
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.15);
+    padding:15px 10px;
+    text-align:center;
+    backdrop-filter:blur(5px);
+}
+
+.count-box strong{
+    display:block;
+    color:white;
+    font-family:Georgia,serif;
+    font-size:34px;
+    line-height:1;
+}
+
+.count-box span{
+    display:block;
+    color:#9eabb7;
+    font-size:9px;
+    letter-spacing:2px;
+    margin-top:7px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-top:35px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:15px 23px;
+    font-size:13px;
+    font-weight:bold;
+    display:inline-block;
+    cursor:pointer;
+    transition:.25s;
+    border:1px solid transparent;
+}
+
+.btn-gold{
+    background:var(--gold);
+    color:#111;
+}
+
+.btn-gold:hover{
+    background:var(--gold-light);
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    border:1px solid rgba(255,255,255,.5);
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:#111;
+}
+
+.hero-info{
+    display:flex;
+    gap:45px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+.hero-info div{
+    border-left:1px solid rgba(255,255,255,.2);
+    padding-left:16px;
+}
+
+.hero-info small{
+    color:#8998a7;
+    display:block;
+    font-size:9px;
+    letter-spacing:2px;
+}
+
+.hero-info strong{
+    color:white;
+    font-size:14px;
+}
+
+/* =========================================================
+   NUMBERS
+========================================================= */
+
+.numbers{
+    background:var(--navy);
+    color:white;
+    padding:42px 0;
+}
+
+.number-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.number-box{
+    border-left:1px solid rgba(255,255,255,.12);
+    padding-left:25px;
+}
+
+.number-box strong{
+    display:block;
+    color:var(--gold);
+    font-size:38px;
+}
+
+.number-box span{
+    color:#91a0ae;
+    font-size:12px;
+}
+
+/* =========================================================
+   COMMON SECTIONS
+========================================================= */
+
+section{
+    padding:110px 0;
+}
+
+.section-title{
+    max-width:800px;
+    margin-bottom:50px;
+}
+
+.kicker{
+    color:#9b7129;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+.section-title h2{
+    font-family:Georgia,serif;
+    font-size:clamp(42px,6vw,70px);
+    line-height:1.02;
+    margin:13px 0 20px;
+}
+
+.section-title h2 span{
+    color:var(--gold);
+}
+
+.section-title p{
+    color:var(--muted);
+}
+
+.dark{
+    background:var(--navy);
+    color:white;
+}
+
+.dark .section-title p{
+    color:#9aa8b5;
+}
+
+.dark .kicker{
+    color:var(--gold-light);
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-visual{
+    min-height:560px;
+    background:linear-gradient(145deg,#123653,#061522);
+    display:flex;
+    align-items:flex-end;
+    padding:45px;
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.about-visual:before{
+    content:"BLS";
+    position:absolute;
+    right:-20px;
+    top:30px;
+    font-family:Georgia,serif;
+    font-size:220px;
+    color:white;
+    opacity:.035;
+}
+
+.about-visual h3{
+    font-family:Georgia,serif;
+    font-size:55px;
+    line-height:1;
+    position:relative;
+}
+
+.about-copy h2{
+    font-family:Georgia,serif;
+    font-size:55px;
+    line-height:1.05;
+    margin:15px 0;
+}
+
+.about-copy h2 span{
+    color:var(--gold);
+}
+
+.about-copy p{
+    color:var(--muted);
+    margin:15px 0;
+}
+
+.checks{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin-top:30px;
+}
+
+.check{
+    border-top:1px solid var(--border);
+    padding:14px 0;
+    font-size:13px;
+}
+
+.check b{
+    color:var(--gold);
+    margin-right:8px;
+}
+
+/* =========================================================
+   CELEBRITY
+========================================================= */
+
+.celebrity-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.celebrity-card{
+    height:600px;
+    position:relative;
+    overflow:hidden;
+    background:#122b43;
+}
+
+.celebrity-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.celebrity-card:hover img{
+    transform:scale(1.04);
+}
+
+.celebrity-overlay{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:35px;
+    background:linear-gradient(transparent,rgba(0,0,0,.9));
+}
+
+.celebrity-overlay small{
+    color:var(--gold-light);
+    letter-spacing:2px;
+    font-size:10px;
+}
+
+.celebrity-overlay h3{
+    font-family:Georgia,serif;
+    font-size:48px;
+    margin-top:5px;
+}
+
+/* =========================================================
+   SPEAKERS
+========================================================= */
+
+.speaker-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.speaker-card{
+    background:var(--navy2);
+    color:white;
+    overflow:hidden;
+    display:block;
+    transition:.3s;
+}
+
+.speaker-card:hover{
+    transform:translateY(-4px);
+}
+
+.speaker-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    object-position:top center;
+}
+
+.speaker-info{
+    padding:22px;
+}
+
+.speaker-info h3{
+    font-size:19px;
+    margin-bottom:6px;
+}
+
+.speaker-info p{
+    color:var(--gold-light);
+    font-size:12px;
+}
+
+.linkedin-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:8px 14px;
+    border:1px solid var(--gold);
+    color:var(--gold);
+    font-size:10px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.linkedin-btn:hover{
+    background:var(--gold);
+    color:#061522;
+}
+
+.placeholder{
+    min-height:400px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background:#f4f5f6;
+    color:#111;
+    text-align:center;
+}
+
+.placeholder .plus{
+    font-size:60px;
+    color:var(--gold);
+}
+
+/* =========================================================
+   EXPERIENCE
+========================================================= */
+
+.cream{
+    background:var(--cream);
+}
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.experience-card{
+    background:white;
+    border:1px solid var(--border);
+    padding:32px;
+    min-height:230px;
+}
+
+.experience-card .num{
+    color:var(--gold);
+    font-weight:bold;
+}
+
+.experience-card h3{
+    font-family:Georgia,serif;
+    font-size:25px;
+    margin:20px 0 7px;
+}
+
+.experience-card p{
+    color:var(--muted);
+    font-size:14px;
+}
+
+/* =========================================================
+   AUDIENCE
+========================================================= */
+
+.audience-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:rgba(255,255,255,.1);
+}
+
+.audience-card{
+    background:var(--navy2);
+    padding:35px;
+    min-height:180px;
+}
+
+.audience-card strong{
+    color:var(--gold);
+}
+
+.audience-card h3{
+    margin:20px 0 5px;
+}
+
+.audience-card p{
+    color:#8f9daa;
+    font-size:13px;
+}
+
+/* =========================================================
+   SPONSORS
+========================================================= */
+
+.partner-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:12px;
+}
+
+.partner{
+    height:105px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:white;
+    border:1px solid var(--border);
+    color:#87919b;
+    font-size:10px;
+    font-weight:bold;
+    letter-spacing:1px;
+    padding:10px;
+}
+
+.partner-box{
+    background:var(--navy);
+    color:white;
+    margin-top:40px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.partner-box h3{
+    font-family:Georgia,serif;
+    font-size:32px;
+}
+
+/* =========================================================
+   ORGANISER
+========================================================= */
+
+.organiser{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.organiser h2{
+    font-family:Georgia,serif;
+    font-size:65px;
+    line-height:1;
+    margin:15px 0;
+}
+
+.organiser h2 span{
+    color:var(--gold);
+}
+
+.organiser p{
+    color:var(--muted);
+    margin-bottom:25px;
+}
+
+.organiser-box{
+    min-height:400px;
+    background:linear-gradient(145deg,#163c5c,#061522);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.organiser-box h3{
+    font-family:Georgia,serif;
+    font-size:48px;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section{
+    background:linear-gradient(90deg,#061522,#0c2840);
+    color:white;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.contact-copy h2{
+    font-family:Georgia,serif;
+    font-size:65px;
+    line-height:1;
+    margin:15px 0 25px;
+}
+
+.contact-copy h2 span{
+    color:var(--gold);
+}
+
+.contact-copy p{
+    color:#aebbc7;
+    margin-bottom:30px;
+}
+
+.contact-box{
+    background:white;
+    color:#111;
+    padding:40px;
+}
+
+.contact-box h3{
+    font-family:Georgia,serif;
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.contact-box p{
+    color:var(--muted);
+    margin-bottom:25px;
+}
+
+.contact-list{
+    margin:20px 0;
+}
+
+.contact-list div{
+    padding:14px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.contact-list strong{
+    display:block;
+    font-size:13px;
+}
+
+.contact-list span{
+    color:var(--muted);
+    font-size:12px;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background:#020b12;
+    color:white;
+    padding:65px 0 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:40px;
+}
+
+.footer-grid h4{
+    margin-bottom:15px;
+}
+
+.footer-grid p,
+.footer-grid a{
+    display:block;
+    color:#778593;
+    font-size:13px;
+    margin:7px 0;
+}
+
+.footer-grid a:hover{
+    color:var(--gold);
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.1);
+    margin-top:45px;
+    padding-top:20px;
+    color:#64717d;
+    font-size:11px;
+}
+
+/* =========================================================
+   MOBILE BOTTOM BAR
+========================================================= */
+
+.mobile-bottom-bar{
+    display:none;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:1000px){
+
+    nav{
+        gap:15px;
+    }
+
+    nav a{
+        font-size:10px;
+    }
+
+    .speaker-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .partner-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:2fr 1fr 1fr;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+    body{
+        padding-bottom:64px;
+    }
+
+    .announcement-bar{
+        height:38px;
+        font-size:9px;
+        letter-spacing:.3px;
+        padding:0 35px 0 10px;
+        line-height:1.2;
+    }
+
+    .announcement-close{
+        right:8px;
+        font-size:16px;
+    }
+
+    header{
+        top:38px;
+    }
+
+    .navbar{
+        height:68px;
+    }
+
+    .logo{
+        gap:8px;
+    }
+
+    .logo-icon{
+        width:36px;
+        height:36px;
+        font-size:21px;
+    }
+
+    .logo-text span{
+        font-size:9px;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    nav{
+        display:none;
+        position:absolute;
+        top:68px;
+        left:0;
+        right:0;
+        width:100%;
+        background:var(--navy);
+        padding:15px 5%;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        border-top:1px solid rgba(255,255,255,.1);
+        box-shadow:0 15px 30px rgba(0,0,0,.25);
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    nav a{
+        font-size:12px;
+        padding:14px 8px;
+        border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    nav .nav-contact{
+        margin-top:8px;
+        text-align:center;
+        border:0;
+    }
+
+    .hero{
+        min-height:auto;
+        padding:155px 0 75px;
+    }
+
+    .hero:after{
+        font-size:90px;
+        right:-20px;
+    }
+
+    .hero h1{
+        font-size:clamp(48px,14vw,70px);
+        line-height:.96;
+        margin:16px 0;
+    }
+
+    .hero p{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .tag{
+        font-size:9px;
+        letter-spacing:2px;
+    }
+
+    .countdown-wrap{
+        margin-top:27px;
+    }
+
+    .countdown{
+        gap:6px;
+    }
+
+    .count-box{
+        padding:12px 5px;
+    }
+
+    .count-box strong{
+        font-size:25px;
+    }
+
+    .count-box span{
+        font-size:7px;
+        letter-spacing:1px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        gap:10px;
+        margin-top:28px;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+        padding:15px 14px;
+        min-height:48px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .hero-info{
+        margin-top:35px;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:15px;
+    }
+
+    .hero-info div{
+        padding-left:12px;
+    }
+
+    .numbers{
+        padding:30px 0;
+    }
+
+    .number-grid{
+        grid-template-columns:1fr 1fr;
+        gap:25px 15px;
+    }
+
+    .number-box{
+        padding-left:12px;
+    }
+
+    .number-box strong{
+        font-size:30px;
+    }
+
+    section{
+        padding:75px 0;
+    }
+
+    .section-title{
+        margin-bottom:35px;
+    }
+
+    .section-title h2{
+        font-size:44px;
+    }
+
+    .section-title p{
+        font-size:14px;
+    }
+
+    .about-grid,
+    .contact-grid,
+    .organiser{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .about-visual{
+        min-height:390px;
+        padding:30px;
+    }
+
+    .about-visual h3{
+        font-size:44px;
+    }
+
+    .about-visual:before{
+        font-size:150px;
+    }
+
+    .about-copy h2{
+        font-size:43px;
+    }
+
+    .checks{
+        grid-template-columns:1fr;
+    }
+
+    .celebrity-grid{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .celebrity-card{
+        height:470px;
+    }
+
+    .celebrity-overlay{
+        padding:25px;
+    }
+
+    .celebrity-overlay h3{
+        font-size:40px;
+    }
+
+    .speaker-grid{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .speaker-card img{
+        height:390px;
+    }
+
+    .speaker-info{
+        padding:20px;
+    }
+
+    .placeholder{
+        min-height:280px;
+    }
+
+    .experience-grid{
+        grid-template-columns:1fr;
+    }
+
+    .experience-card{
+        min-height:auto;
+        padding:27px;
+    }
+
+    .audience-grid{
+        grid-template-columns:1fr;
+    }
+
+    .audience-card{
+        min-height:auto;
+        padding:27px;
+    }
+
+    .partner-grid{
+        grid-template-columns:1fr 1fr;
+        gap:8px;
+    }
+
+    .partner{
+        height:90px;
+    }
+
+    .partner-box{
+        display:block;
+        padding:28px 22px;
+    }
+
+    .partner-box h3{
+        font-size:27px;
+        margin-top:10px;
+    }
+
+    .partner-box .btn{
+        margin-top:20px;
+    }
+
+    .organiser h2{
+        font-size:50px;
+    }
+
+    .organiser-box{
+        min-height:300px;
+    }
+
+    .organiser-box h3{
+        font-size:38px;
+    }
+
+    .contact-copy h2{
+        font-size:48px;
+    }
+
+    .contact-box{
+        padding:28px 22px;
+    }
+
+    .contact-box h3{
+        font-size:28px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+        gap:30px 20px;
+    }
+
+    .footer-grid > div:first-child{
+        grid-column:1/-1;
+    }
+
+    .mobile-bottom-bar{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        position:fixed;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:2000;
+        height:62px;
+        box-shadow:0 -4px 20px rgba(0,0,0,.2);
+    }
+
+    .mobile-bottom-bar a{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:11px;
+        font-weight:bold;
+        letter-spacing:.5px;
+    }
+
+    .mobile-register{
+        background:var(--gold);
+        color:#111;
+    }
+
+    .mobile-contact{
+        background:var(--navy);
+        color:white;
+    }
+}
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media(max-width:380px){
+
+    .hero h1{
+        font-size:46px;
+    }
+
+    .count-box strong{
+        font-size:22px;
+    }
+
+    .hero-info{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:38px;
+    }
+
+    .celebrity-card{
+        height:420px;
+    }
+
+    .speaker-card img{
+        height:340px;
+    }
+
+    .partner-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+a:focus-visible,
+button:focus-visible{
+    outline:2px solid var(--gold-light);
+    outline-offset:3px;
+}
+
+@media(prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *{
+        transition:none!important;
+        animation:none!important;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     ANNOUNCEMENT BAR
+======================================================= -->
+
+<div class="announcement-bar" id="announcementBar">
+
+<span>
+🔥 1st Edition • Bharat Leadership Summit 2026 • 1 November 2026
+<a href="#contact">Connect With Us →</a>
+</span>
+
+<button
+class="announcement-close"
+onclick="closeAnnouncement()"
+aria-label="Close announcement"
+>
+×
+</button>
+
+</div>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#home" class="logo">
+    <img
+        src="images/bharat-leadership-summit-logo.png"
+        alt="Bharat Leadership Summit"
+        class="header-logo"
+    >
+</a>
+
+
+<button
+class="mobile-btn"
+onclick="toggleMenu()"
+aria-label="Open navigation"
+>
+☰
+</button>
+
+
+<nav id="navigation">
+
+<a href="#about">ABOUT</a>
+
+<a href="#guests">GUESTS</a>
+
+<a href="#speakers">SPEAKERS</a>
+
+<a href="#investors">INVESTORS</a>
+
+<a href="#network">NETWORKING</a>
+
+<a href="#partners">PARTNERS</a>
+
+<a href="#contact" class="nav-contact">
+CONTACT
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section class="hero" id="home">
+
+<div class="container hero-content">
+
+<div class="tag">
+1ST EDITION • 2026 • SPECTRASPOT EVENTS
+</div>
+
+<h1>
+
+Where India's
+
+<br>
+
+<span>leaders connect.</span>
+
+</h1>
+
+<p>
+
+Bharat Leadership Summit 2026 brings together
+entrepreneurs, business owners, investors,
+corporate leaders, speakers, media and changemakers
+for meaningful conversations, networking and
+business opportunities.
+
+</p>
+
+
+<!-- COUNTDOWN -->
+
+<div class="countdown-wrap">
+
+<div class="countdown-label">
+EVENT STARTS IN
+</div>
+
+<div class="countdown">
+
+<div class="count-box">
+<strong id="days">00</strong>
+<span>DAYS</span>
+</div>
+
+<div class="count-box">
+<strong id="hours">00</strong>
+<span>HOURS</span>
+</div>
+
+<div class="count-box">
+<strong id="minutes">00</strong>
+<span>MINUTES</span>
+</div>
+
+<div class="count-box">
+<strong id="seconds">00</strong>
+<span>SECONDS</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="buttons">
+
+<a
+href="#contact"
+class="btn btn-gold"
+>
+REGISTER / CONNECT →
+</a>
+
+<a
+href="#guests"
+class="btn btn-outline"
+>
+MEET THE GUESTS
+</a>
+
+</div>
+
+
+<div class="hero-info">
+
+<div>
+
+<small>EDITION</small>
+
+<strong>
+1st Edition
+</strong>
+
+</div>
+
+<div>
+
+<small>DATE</small>
+
+<strong>
+1 November 2026
+</strong>
+
+</div>
+
+<div>
+
+<small>ORGANISER</small>
+
+<strong>
+SpectraSpot Events
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     NUMBERS
+======================================================= -->
+
+<section class="numbers">
+
+<div class="container number-grid">
+
+<div class="number-box">
+
+<strong>01</strong>
+
+<span>
+First Edition
+</span>
+
+</div>
+
+
+<div class="number-box">
+
+<strong>50+</strong>
+
+<span>
+Leadership Voices
+</span>
+
+</div>
+
+
+<div class="number-box">
+
+<strong>500+</strong>
+
+<span>
+Business Ecosystem
+</span>
+
+</div>
+
+
+<div class="number-box">
+
+<strong>250+</strong>
+
+<span>
+Founder Ecosystem
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     ABOUT
+======================================================= -->
+
+<section id="about">
+
+<div class="container about-grid">
+
+
+<div class="about-visual">
+
+<img class="about-photo" src="images/about.jpg" alt="Bharat Leadership Summit">
+<div class="about-photo-overlay"></div>
+
+<div class="about-visual-content">
+
+<div class="tag">
+
+</div>
+
+<!--<h3>
+
+Business.
+
+<br>
+
+Leadership.
+
+<br>
+
+Opportunity.
+
+</h3>-->
+
+</div>
+
+</div>
+
+
+<div class="about-copy">
+
+<div class="kicker">
+ABOUT THE SUMMIT
+</div>
+
+<h2>
+
+A room full of people who can
+
+<span>
+move your business forward.
+</span>
+
+</h2>
+
+<p>
+
+Bharat Leadership Summit 2026 is designed as
+a premium platform where ideas, relationships
+and opportunities meet.
+
+</p>
+
+<p>
+
+The first edition brings together business owners,
+founders, investors, CXOs, professionals, media
+and strategic partners for meaningful networking,
+thought leadership and growth.
+
+</p>
+
+
+<div class="checks">
+
+<div class="check">
+<b>01</b>
+Leadership conversations
+</div>
+
+<div class="check">
+<b>02</b>
+Business networking
+</div>
+
+<div class="check">
+<b>03</b>
+Investor connections
+</div>
+
+<div class="check">
+<b>04</b>
+Brand & media visibility
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     CELEBRITY GUESTS
+======================================================= -->
+
+<section class="dark" id="guests">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="kicker">
+SPECIAL CELEBRITY GUESTS
+</div>
+
+<h2>
+
+Recognised voices.
+
+<br>
+
+<span>
+Inspiring journeys.
+</span>
+
+</h2>
+
+<p>
+
+Celebrity guest participation should be displayed
+only after final confirmation by the event organiser.
+
+</p>
+
+</div>
+
+
+<div class="celebrity-grid">
+
+
+<div class="celebrity-card">
+
+<img
+src="images/sonu.jpg"
+alt="Sonu Sood"
+>
+
+<div class="celebrity-overlay">
+
+<small>
+CELEBRITY GUEST
+</small>
+
+<h3>
+Sonu Sood
+</h3>
+
+</div>
+
+</div>
+
+
+<div class="celebrity-card">
+
+<img
+src="images/moni.jpg"
+alt="Mouni Roy"
+>
+
+<div class="celebrity-overlay">
+
+<small>
+CELEBRITY GUEST
+</small>
+
+<h3>
+Mouni Roy
+</h3>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     SPEAKERS
+======================================================= -->
+
+<section class="dark" id="speakers">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="kicker">
+LEADERSHIP VOICES
+</div>
+
+<h2>
+
+People with
+
+<br>
+
+<span>
+real-world experience.
+</span>
+
+</h2>
+
+<p>
+
+Meet the business leaders and professionals
+joining the first edition of Bharat Leadership Summit.
+
+</p>
+
+</div>
+
+
+<div class="speaker-grid">
+
+
+<!-- DR SYED -->
+
+<a
+href="#"
+class="speaker-card"
+>
+
+<img
+src="images/Dr.SyedTariq.jpg"
+alt="Dr. Syed Tariq Hashmi"
+>
+
+<div class="speaker-info">
+
+<h3>
+Dr. Syed Tariq Hashmi
+</h3>
+
+<p>
+Business Head – Strategic Planning & Partnerships at Toviva Lifesciences
+</p>
+
+<!-- Add LinkedIn URL here -->
+
+<!--
+<a
+href="YOUR-LINKEDIN-URL"
+target="_blank"
+rel="noopener noreferrer"
+class="linkedin-btn"
+>
+LinkedIn ↗
+</a>
+-->
+
+</div>
+
+</a>
+
+
+<!-- MELWYN -->
+
+<a
+href="#"
+class="speaker-card"
+>
+
+<img
+src="images/MelwynWilliamsChirayath.jpg"
+alt="Melwyn Williams Chirayath"
+>
+
+<div class="speaker-info">
+
+<h3>
+Melwyn Williams Chirayath
+</h3>
+
+<p>
+Actor • Writer • Director • Producer • Entrepreneur
+</p>
+
+<!-- Add LinkedIn URL here -->
+
+</div>
+
+</a>
+
+
+<!-- SUDHANSHU -->
+
+<a
+href="#"
+class="speaker-card"
+>
+
+<img
+src="images/SudhanshuMittal.jpg"
+alt="Sudhanshu Mittal"
+>
+
+<div class="speaker-info">
+
+<h3>
+Sudhanshu Mittal
+</h3>
+
+<p>
+Head & Director Technical Solutions at NASSCOM
+</p>
+
+<!-- Add LinkedIn URL here -->
+
+</div>
+
+</a>
+
+
+<!-- VIKAS -->
+
+<a
+href="#"
+class="speaker-card"
+>
+
+<img
+src="images/VikasNaik.jpg"
+alt="Vikas Naik"
+>
+
+<div class="speaker-info">
+
+<h3>
+Vikas Naik
+</h3>
+
+<p>
+Director - CIO Uprisesol LLP IIT Bombay IIT Guwahati
+</p>
+
+<!-- Add LinkedIn URL here -->
+
+</div>
+
+</a>
+
+
+<!-- NITIN -->
+
+<a
+href="#"
+class="speaker-card"
+>
+
+<img
+src="images/NitinKhindria.jpg"
+alt="Nitin Khindria"
+>
+
+<div class="speaker-info">
+
+<h3>
+Nitin Khindria
+</h3>
+
+<p>
+Group CHRO Omega Seiki Mobility; Omega Bright Steel; Anglian omega Group 
+</p>
+
+<!-- Add LinkedIn URL here -->
+
+</div>
+
+</a>
+
+
+<!-- MORE SPEAKERS -->
+
+<!--<div class="speaker-card placeholder">
+
+<div class="plus">
++
+</div>
+
+<h3>
+Speaker Announcement
+</h3>
+
+<p>
+More confirmed speakers coming soon
+</p>  
+
+</div> -->
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     INVESTORS & BUSINESS VOICES
+======================================================= -->
+
+<section class="dark investors-section" id="investors">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="kicker">
+INVESTORS & BUSINESS VOICES
+</div>
+
+<h2>
+Meet the people
+<br>
+<span>backing ideas and growth.</span>
+</h2>
+
+<p>
+Connect with investors, founders and business leaders who can open doors to capital, partnerships and new opportunities.
+</p>
+
+</div>
+
+<div class="investor-grid">
+
+<div class="investor-card">
+<img src="images/BhagyashreeSingh.jpg" alt="Bhagyashree Singh">
+<div class="investor-info">
+<span>Founder, Investor, and Public Engagement Strategist | Merakii</span>
+<h3>Bhagyashree Singh</h3>
+</div>
+</div>
+
+<div class="investor-card">
+<img src="images/Dr.VibhutiAggarwal.jpg" alt="Dr. Vibhuti Aggarwal">
+<div class="investor-info">
+<span>General Partner at Real Time Angel Fund || Advisor at Fluid Ventures</span>
+<h3>Dr. Vibhuti Aggarwal</h3>
+</div>
+</div>
+
+<div class="investor-card">
+<img src="images/IshantSachdeva.jpg" alt="Ishant Sachdeva">
+<div class="investor-info">
+<span>Founder B and S Ventures, Venture Builder, Investor</span>
+<h3>Ishant Sachdeva</h3>
+</div>
+</div>
+
+<div class="investor-card">
+<img src="images/JiteshMadhwani.jpg" alt="Jitesh Madhwani">
+<div class="investor-info">
+<span>Founder - FLVR.in </span>
+<h3>Jitesh Madhwani</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     NETWORKING
+======================================================= -->
+
+<section class="cream" id="network">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="kicker">
+THE BLS EXPERIENCE
+</div>
+
+<h2>
+
+More than a stage.
+
+<br>
+
+<span>
+A business ecosystem.
+</span>
+
+</h2>
+
+<p>
+
+Designed to create value before, during and
+after the summit.
+
+</p>
+
+</div>
+
+
+<div class="experience-grid">
+
+
+<div class="experience-card">
+
+<div class="num">
+01
+</div>
+
+<h3>
+Leadership
+</h3>
+
+<p>
+Thought-provoking conversations around
+leadership, enterprise and India's future.
+</p>
+
+</div>
+
+
+<div class="experience-card">
+
+<div class="num">
+02
+</div>
+
+<h3>
+Networking
+</h3>
+
+<p>
+Meet founders, business owners, investors,
+executives and strategic partners.
+</p>
+
+</div>
+
+
+<div class="experience-card">
+
+<div class="num">
+03
+</div>
+
+<h3>
+Investor Connect
+</h3>
+
+<p>
+Build conversations around capital,
+growth, partnerships and ventures.
+</p>
+
+</div>
+
+
+<div class="experience-card">
+
+<div class="num">
+04
+</div>
+
+<h3>
+Brand Visibility
+</h3>
+
+<p>
+Put your brand in front of a relevant
+business and leadership audience.
+</p>
+
+</div>
+
+
+<div class="experience-card">
+
+<div class="num">
+05
+</div>
+
+<h3>
+Media
+</h3>
+
+<p>
+Connect with news and digital media
+around business stories.
+</p>
+
+</div>
+
+
+<div class="experience-card">
+
+<div class="num">
+06
+</div>
+
+<h3>
+Collaboration
+</h3>
+
+<p>
+Turn introductions into relationships
+and long-term opportunities.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     WHO SHOULD ATTEND
+======================================================= -->
+
+<section class="dark">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="kicker">
+WHO SHOULD ATTEND
+</div>
+
+<h2>
+
+The right people
+
+<br>
+
+<span>
+in one room.
+</span>
+
+</h2>
+
+</div>
+
+
+<div class="audience-grid">
+
+
+<div class="audience-card">
+
+<strong>01</strong>
+
+<h3>
+Business Owners
+</h3>
+
+<p>
+Partnerships, market access and growth.
+</p>
+
+</div>
+
+
+<div class="audience-card">
+
+<strong>02</strong>
+
+<h3>
+Founders & Entrepreneurs
+</h3>
+
+<p>
+Connections for ambitious businesses.
+</p>
+
+</div>
+
+
+<div class="audience-card">
+
+<strong>03</strong>
+
+<h3>
+Investors
+</h3>
+
+<p>
+Credible opportunities and capital conversations.
+</p>
+
+</div>
+
+
+<div class="audience-card">
+
+<strong>04</strong>
+
+<h3>
+Corporate Leaders
+</h3>
+
+<p>
+CXOs and decision-makers.
+</p>
+
+</div>
+
+
+<div class="audience-card">
+
+<strong>05</strong>
+
+<h3>
+Media
+</h3>
+
+<p>
+Business, leadership and innovation stories.
+</p>
+
+</div>
+
+
+<div class="audience-card">
+
+<strong>06</strong>
+
+<h3>
+Strategic Partners
+</h3>
+
+<p>
+High-value visibility and collaboration.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     SPONSORS
+======================================================= -->
+
+<section id="partners">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="kicker">
+SPONSORS & PARTNERS
+</div>
+
+<h2>
+
+Put your brand
+
+<br>
+
+<span>
+in the conversation.
+</span>
+
+</h2>
+
+<p>
+
+Opportunities for sponsors, strategic partners,
+media organisations and business communities.
+
+</p>
+
+</div>
+
+
+<div class="partner-marquee" aria-label="Media and strategic partners">
+  <div class="partner-track">
+    <div class="partner-logo">
+         <img src="images/Aaj_tak.png" alt="AAJ_TAK"></div>
+    <div class="partner-logo">India <TV>
+        <img src="images/India_tv.png" alt="India_tv">
+    </TV></div>
+    <div class="partner-logo"><img src="images/ND_tv.png" alt="NDTV"></div>
+    <div class="partner-logo"><img src="images/HT.png" alt="Hindustan Times"></div>
+    <div class="partner-logo"><img src="images/DH.png" alt="Dailyhunt"></div>
+    <div class="partner-logo"><img src="images/BNN.png" alt="Big News Network"></div>
+    <div class="partner-logo"><img src="images/INC.png" alt="India News Network"></div>
+    <div class="partner-logo"><img src="images/Google_News.png" alt="Google News"></div>
+    <div class="partner-logo"><img src="images/ABP.png" alt="ABP News"></div>
+    <div class="partner-logo"><img src="images/ZEE.png" alt="Zee News"></div>
+    <div class="partner-logo"><img src="images/ANI.png" alt="ANI"></div>
+    <div class="partner-logo"><img src="images/ENP.png" alt="England News Portal"></div>
+    <div class="partner-logo"><img src="images/BL.png" alt="Birmingham Live"></div>
+    <div class="partner-logo"><img src="images/NT.png" alt="NewsTime"></div>
+    <div class="partner-logo"><img src="images/EA.png" alt="East Asia"></div>
+    <div class="partner-logo">&amp; Many More</div>
+
+    <!--<div class="partner-logo" aria-hidden="true">Aaj Tak</div>
+    <div class="partner-logo" aria-hidden="true">India TV</div>
+    <div class="partner-logo" aria-hidden="true">NDTV</div>
+    <div class="partner-logo" aria-hidden="true">Hindustan Times</div>
+    <div class="partner-logo" aria-hidden="true">Dailyhunt</div>
+    <div class="partner-logo" aria-hidden="true">Big News Network</div>
+    <div class="partner-logo" aria-hidden="true">India News Network</div>
+    <div class="partner-logo" aria-hidden="true">Google News</div>
+    <div class="partner-logo" aria-hidden="true">ABP News</div>
+    <div class="partner-logo" aria-hidden="true">Zee News</div>
+    <div class="partner-logo" aria-hidden="true">ANI</div>
+    <div class="partner-logo" aria-hidden="true">England News Portal</div>
+    <div class="partner-logo" aria-hidden="true">Birmingham Live</div>
+    <div class="partner-logo" aria-hidden="true">NewsTime</div>
+    <div class="partner-logo" aria-hidden="true">East Asia</div>
+    <div class="partner-logo" aria-hidden="true">&amp; Many More</div>-->
+  </div>
+</div>
+
+
+
+
+<div class="partner-box">
+
+<div>
+
+<div class="kicker" style="color:#f1d798">
+PARTNERSHIP OPPORTUNITY
+</div>
+
+<h3>
+Build visibility where relationships are built.
+</h3>
+
+</div>
+
+
+<a
+href="https://spectraspotevents.com/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-gold"
+>
+CONNECT WITH SPECTRASPOT →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     ORGANISER
+======================================================= -->
+
+<section>
+
+<div class="container organiser">
+
+
+<div>
+
+<div class="kicker">
+ORGANISED BY
+</div>
+
+<h2>
+
+SpectraSpot
+
+<br>
+
+<span>
+Events
+</span>
+
+</h2>
+
+<p>
+
+The parent company behind the event, creating
+business-focused conferences, awards, networking
+platforms and opportunities for brands,
+entrepreneurs and leaders.
+
+</p>
+
+
+<a
+href="https://spectraspotevents.com/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn"
+style="background:#061522;color:white"
+>
+VISIT SPECTRASPOT EVENTS →
+</a>
+
+</div>
+
+
+<div class="organiser-box">
+
+<div>
+
+<!--<div class="tag">
+    OFFICIAL EVENT ORGANISER
+</div>-->
+
+<img
+    src="images/spectraspot-logo.png"
+    alt="Spectraspot Events"
+    class="organiser-logo"
+>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     CONTACT
+======================================================= -->
+
+<section class="contact-section" id="contact">
+
+<div class="container contact-grid">
+
+
+<div class="contact-copy">
+
+<div class="kicker">
+BE PART OF BLS 2026
+</div>
+
+<h2>
+
+Bring your ambition.
+
+<br>
+
+<span>
+Leave with possibilities.
+</span>
+
+</h2>
+
+<p>
+
+Want to attend, sponsor, partner, speak,
+invest or connect with the Bharat Leadership
+Summit ecosystem?
+
+</p>
+
+<a
+href="https://spectraspotevents.com/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-gold"
+>
+CONNECT WITH SPECTRASPOT EVENTS →
+</a>
+
+</div>
+
+
+<div class="contact-box">
+
+<h3>
+Contact & Registration
+</h3>
+
+<p>
+
+For all official enquiries, registrations,
+sponsorships and partnership opportunities,
+connect directly with the event organiser.
+
+</p>
+
+
+<div class="contact-list">
+
+<div>
+
+<strong>
+Event
+</strong>
+
+<span>
+Bharat Leadership Summit 2026
+</span>
+
+</div>
+
+
+<div>
+
+<strong>
+Date
+</strong>
+
+<span>
+1 November 2026
+</span>
+
+</div>
+
+
+<div>
+
+<strong>
+Edition
+</strong>
+
+<span>
+1st Edition
+</span>
+
+</div>
+
+
+<div>
+
+<strong>
+Organiser
+</strong>
+
+<span>
+SpectraSpot Events
+</span>
+
+</div>
+
+
+<div>
+
+<strong>
+Official Website
+</strong>
+
+<span>
+spectraspotevents.com
+</span>
+
+</div>
+
+</div>
+
+
+<a
+href="https://spectraspotevents.com/"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-gold"
+style="width:100%;text-align:center"
+>
+GO TO OFFICIAL CONTACT PAGE →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+<div class="container footer-grid">
+
+
+<div>
+<a href="#home" class="logo footer-logo">
+    <img src="images/bharat-leadership-summit-logo.png" alt="Bharat Leadership Summit 2026">
+</a>
+<p style="margin-top:20px">
+
+Bharat Leadership Summit 2026 —
+a platform for leadership, business,
+investment, networking and opportunity.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h4>
+EXPLORE
+</h4>
+
+<a href="#about">
+About
+</a>
+
+<a href="#guests">
+Guests
+</a>
+
+<a href="#speakers">
+Speakers
+</a>
+
+<a href="#network">
+Networking
+</a>
+
+</div>
+
+
+<div>
+
+<h4>
+OPPORTUNITIES
+</h4>
+
+<a href="#contact">
+Attend
+</a>
+
+<a href="#partners">
+Sponsor
+</a>
+
+<a href="#contact">
+Partner
+</a>
+
+<a href="#contact">
+Speak
+</a>
+
+</div>
+
+
+<div>
+
+<h4>
+ORGANISER
+</h4>
+
+<a
+href="https://spectraspotevents.com/"
+target="_blank"
+rel="noopener noreferrer"
+>
+SpectraSpot Events ↗
+</a>
+
+<a
+href="https://spectraspotevents.com/"
+target="_blank"
+rel="noopener noreferrer"
+>
+Official Website ↗
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="container copyright">
+
+© 2026 Bharat Leadership Summit • Organised by SpectraSpot Events
+
+</div>
+
+</footer>
+
+
+<!-- =======================================================
+     MOBILE BOTTOM BAR
+======================================================= -->
+
+<div class="mobile-bottom-bar">
+
+<a
+href="https://spectraspotevents.com/"
+target="_blank"
+rel="noopener noreferrer"
+class="mobile-register"
+>
+REGISTER / CONNECT
+</a>
+
+<a
+href="#contact"
+class="mobile-contact"
+>
+CONTACT
+</a>
+
+</div>
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+function toggleMenu(){
+
+    const nav = document.getElementById("navigation");
+
+    nav.classList.toggle("active");
+
+}
+
+
+/* Close menu after clicking a navigation link */
+
+document.querySelectorAll("#navigation a").forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+        document
+        .getElementById("navigation")
+        .classList
+        .remove("active");
+
+    });
+
+});
+
+
+/* =========================================================
+   ANNOUNCEMENT BAR
+========================================================= */
+
+function closeAnnouncement(){
+
+    const bar = document.getElementById("announcementBar");
+
+    bar.style.display = "none";
+
+    document.body.classList.add("announcement-hidden");
+
+}
+
+
+/* =========================================================
+   COUNTDOWN
+   EVENT DATE:
+   1 NOVEMBER 2026
+   IST (+05:30)
+
+   If your event starts at a specific time, change:
+
+   00:00:00
+
+   Example for 10:00 AM:
+
+   2026-11-01T10:00:00+05:30
+========================================================= */
+
+const eventDate = new Date(
+    "2026-11-01T00:00:00+05:30"
+).getTime();
+
+
+function updateCountdown(){
+
+    const now = new Date().getTime();
+
+    const distance = eventDate - now;
+
+
+    if(distance <= 0){
+
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+
+        return;
+
+    }
+
+
+    const days = Math.floor(
+        distance / (1000 * 60 * 60 * 24)
+    );
+
+
+    const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24))
+        / (1000 * 60 * 60)
+    );
+
+
+    const minutes = Math.floor(
+        (distance % (1000 * 60 * 60))
+        / (1000 * 60)
+    );
+
+
+    const seconds = Math.floor(
+        (distance % (1000 * 60))
+        / 1000
+    );
+
+
+    document.getElementById("days").textContent =
+        String(days).padStart(2,"0");
+
+
+    document.getElementById("hours").textContent =
+        String(hours).padStart(2,"0");
+
+
+    document.getElementById("minutes").textContent =
+        String(minutes).padStart(2,"0");
+
+
+    document.getElementById("seconds").textContent =
+        String(seconds).padStart(2,"0");
+
+}
+
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+
+/* =========================================================
+   ESC KEY CLOSES MOBILE MENU
+========================================================= */
+
+document.addEventListener("keydown",function(event){
+
+    if(event.key === "Escape"){
+
+        document
+        .getElementById("navigation")
+        .classList
+        .remove("active");
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
