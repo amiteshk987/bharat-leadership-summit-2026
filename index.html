@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -8,6 +8,8 @@
 
 <meta name="description" content="Bharat Leadership Summit 2026 - India's platform for business leaders, entrepreneurs, investors, speakers, media and networking.">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="pages.css">
+<link rel="icon" href="images/bharat-leadership-summit-logo.png">
 
 <style>
 
@@ -76,40 +78,67 @@ button{
     top:0;
     left:0;
     width:100%;
-    height:34px;
+    height:38px;
     z-index:1001;
     background:var(--gold);
     color:#111;
     display:flex;
     align-items:center;
     justify-content:center;
-    text-align:center;
+    text-align:left;
     font-size:11px;
     font-weight:bold;
     letter-spacing:.8px;
     padding:0 40px;
 }
 
-.announcement-bar span{
-    display:block;
+.ticker-viewport{
+    width:100%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.ticker-track{
+    display:inline-flex;
+    align-items:center;
+    width:max-content;
+    animation:blsTicker 52s linear infinite;
+    will-change:transform;
+}
+
+.ticker-track:hover{
+    animation-play-state:paused;
+}
+
+.ticker-item{
+    display:inline-flex;
+    align-items:center;
+    gap:18px;
+    padding-right:38px;
+    color:#111;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.ticker-item::after{
+    content:"•";
+    color:#59420e;
+    font-size:16px;
+}
+
+.ticker-copy{
+    display:inline-block;
+}
+
+@keyframes blsTicker{
+    from{transform:translateX(0)}
+    to{transform:translateX(-50%)}
 }
 
 .announcement-bar a{
     text-decoration:underline;
     margin-left:7px;
-}
-
-.announcement-close{
-    position:absolute;
-    right:15px;
-    top:50%;
-    transform:translateY(-50%);
-    background:none;
-    border:0;
-    cursor:pointer;
-    font-size:18px;
-    line-height:1;
-    color:#111;
 }
 
 /* =========================================================
@@ -118,7 +147,7 @@ button{
 
 header{
     position:fixed;
-    top:34px;
+    top:38px;
     left:0;
     width:100%;
     z-index:1000;
@@ -957,11 +986,6 @@ footer{
         line-height:1.2;
     }
 
-    .announcement-close{
-        right:8px;
-        font-size:16px;
-    }
-
     header{
         top:38px;
     }
@@ -1369,20 +1393,22 @@ button:focus-visible{
      ANNOUNCEMENT BAR
 ======================================================= -->
 
-<div class="announcement-bar" id="announcementBar">
+<div class="announcement-bar ticker-bar" id="announcementBar">
 
-<span>
-🔥 1st Edition • Bharat Leadership Summit 2026 • 1 November 2026
-<a href="#contact">Connect With Us →</a>
-</span>
-
-<button
-class="announcement-close"
-onclick="closeAnnouncement()"
-aria-label="Close announcement"
->
-×
-</button>
+<div class="ticker-viewport" aria-label="Bharat Leadership Summit announcements">
+<div class="ticker-track">
+<span class="ticker-item"><span class="ticker-copy">BHARAT LEADERSHIP SUMMIT 2026 • WHERE INDIA'S LEADERS CONNECT</span></span>
+<span class="ticker-item"><span class="ticker-copy">15 OCTOBER 2026 • OFFICIAL ANNOUNCEMENT DATE</span></span>
+<span class="ticker-item"><span class="ticker-copy">VENUE • PREMIUM BUSINESS &amp; LEADERSHIP EXPERIENCE</span></span>
+<span class="ticker-item"><span class="ticker-copy">HOTEL ACCOMMODATION • SPECIAL EVENT EXPERIENCE</span></span>
+<span class="ticker-item"><span class="ticker-copy">INVESTORS • FOUNDERS • BUSINESS LEADERS • CORPORATE LEADERS</span></span>
+<span class="ticker-item"><span class="ticker-copy">SPONSORS &amp; STRATEGIC PARTNERS • CONNECT WITH INDIA'S BUSINESS ECOSYSTEM</span></span>
+<span class="ticker-item"><span class="ticker-copy">PITCH STAGE • PRESENT YOUR BUSINESS • EXPLORE POTENTIAL INVESTMENT OPPORTUNITIES</span></span>
+<span class="ticker-item"><span class="ticker-copy">TOTAL FUNDING POOL UP TO ₹25 CRORE • SUBJECT TO INVESTOR EVALUATION AND SELECTION</span></span>
+<span class="ticker-item"><span class="ticker-copy">CONTEST • REGISTER NOW • ₹999 → ₹499 • 50% OFF</span></span>
+<span class="ticker-item"><span class="ticker-copy">NETWORK • CONNECT • LEARN • GROW</span></span>
+</div>
+</div>
 
 </div>
 
@@ -1422,6 +1448,10 @@ aria-label="Open navigation"
 <a href="#speakers">SPEAKERS</a>
 
 <a href="#investors">INVESTORS</a>
+
+<a href="contest.html">CONTEST</a>
+
+<a href="pitch-stage.html">PITCH STAGE</a>
 
 <a href="#network">NETWORKING</a>
 
@@ -2571,6 +2601,24 @@ VISIT SPECTRASPOT EVENTS →
 
 
 <!-- =======================================================
+     OPPORTUNITIES
+======================================================= -->
+
+<section class="opportunity-strip">
+<div class="container opportunity-grid">
+<a class="opportunity-card" href="contest.html">
+<div><div class="kicker">BLS 2026 COMMUNITY OPPORTUNITY</div><h2>Contest</h2><p>Register for a chance to win recognition, event access and a VIP experience.</p></div>
+<strong>₹499 <span>REGISTER →</span></strong>
+</a>
+<a class="opportunity-card opportunity-card-dark" href="pitch-stage.html">
+<div><div class="kicker">FOR FOUNDERS &amp; STARTUPS</div><h2>Pitch Stage</h2><p>Funding Pool — Up to ₹25 Crore. 8 Minutes to Make Your Case.</p><small>5 Min Elevator Pitch + 3 Min Q&amp;A · Registration: ₹1,999</small></div>
+<strong>APPLY NOW <span>→</span></strong>
+</a>
+</div>
+</section>
+
+
+<!-- =======================================================
      CONTACT
 ======================================================= -->
 
@@ -2893,13 +2941,15 @@ document.querySelectorAll("#navigation a").forEach(function(link){
    ANNOUNCEMENT BAR
 ========================================================= */
 
-function closeAnnouncement(){
+const tickerTrack = document.querySelector(".ticker-track");
 
-    const bar = document.getElementById("announcementBar");
+if(tickerTrack){
 
-    bar.style.display = "none";
-
-    document.body.classList.add("announcement-hidden");
+    tickerTrack.append(...Array.from(tickerTrack.children).map(function(item){
+        const copy = item.cloneNode(true);
+        copy.setAttribute("aria-hidden","true");
+        return copy;
+    }));
 
 }
 
